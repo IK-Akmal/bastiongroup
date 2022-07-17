@@ -1,0 +1,27 @@
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 16.5px;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 33px;
+    cursor: pointer;
+
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.009em;
+
+}
+
+.primary {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 500;
+
+}
+
+.ghost {
+    background-color: #EFEFEF;
+    color: black;
+    font-weight: 400;
+}

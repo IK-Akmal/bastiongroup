@@ -1,0 +1,36 @@
+.breadcrumb {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+
+    padding: 0;
+    margin: 0;
+
+
+
+
+    li {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.009em;
+        color: #B3B3B3;
+
+        svg {
+            height: 8px;
+            width: 8px;
+        }
+    }
+
+    li:not(:last-child) {
+        span {
+            margin-right: 15px;
+        }
+    }
+
+    li:last-child {
+        font-weight: 500;
+        color: black;
+    }
+
+}

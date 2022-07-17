@@ -1,0 +1,45 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid #E6E6E6;
+    border-radius: 4px;
+    padding: 13px 17px;
+
+
+    max-width: 546px;
+    width: 100%;
+
+    &:focus-within {
+        border-color: var(--primary-color);
+    }
+
+    .input {
+        display: block;
+
+        font-family: 'Fira Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0.009em;
+
+        border: none;
+        outline: none;
+
+        width: 100%;
+
+        &::placeholder {
+            font-family: 'Fira Sans';
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 18px;
+
+            color: #B3B3B3;;
+        }
+
+        &::-webkit-search-cancel-button {
+            -webkit-appearance: none;
+        }
+    }
+}

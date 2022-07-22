@@ -1,19 +1,15 @@
 import classNames from 'classnames';
-import { KeyboardEvent, useState } from 'react';
+import { KeyboardEvent } from 'react';
 import CounterProps from './Counter.props';
 import styles from './Counter.module.scss';
 
-function Counter({ className, onChange, value = 1 }: CounterProps) {
-  const [state, setState] = useState<number>(value);
-
+function Counter({ className, onChange, value }: CounterProps) {
   const increment = () => {
-    setState(state + 1);
-    onChange?.(state);
+    onChange(value + 1);
   };
   const decrement = () => {
-    if (state > 1) {
-      setState(state - 1);
-      onChange(state);
+    if (value > 1) {
+      onChange(value - 1);
     }
   };
 
@@ -32,10 +28,8 @@ function Counter({ className, onChange, value = 1 }: CounterProps) {
     const count = Number(arg);
 
     if (count < 1) {
-      setState(1);
       onChange(1);
     } else {
-      setState(count);
       onChange(count);
     }
   };
@@ -56,7 +50,7 @@ function Counter({ className, onChange, value = 1 }: CounterProps) {
         min="1"
         step="1"
         type="number"
-        value={state}
+        value={value}
         className={styles.input}
         onChange={(e) => handleChange(e.target.value)}
       />

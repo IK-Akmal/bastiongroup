@@ -1,0 +1,13 @@
+.body{
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    grid-template-rows: 60px 1fr 84px;
+    
+    background-color: white;
+
+    .order{
+        grid-column: 2/3;
+        grid-row: 1/4;
+        border-left: 1px solid #E6E6E6;
+    }
+}

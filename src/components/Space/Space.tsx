@@ -4,7 +4,7 @@ import styles from './Space.module.scss';
 import SpacePropsType from './Space.props';
 
 function Space({
-  align, direction = 'row', gap, children,
+  align, direction = 'row', gap, children, justifyContent,
 }: PropsWithChildren<SpacePropsType>) {
   return (
     <div
@@ -14,8 +14,9 @@ function Space({
           alignItems: align,
           flexDirection: direction,
           gap,
+          justifyContent,
         }
-    }
+      }
     >
       {children}
     </div>

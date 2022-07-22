@@ -1,6 +1,7 @@
 .btn {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 16.5px;
     border: none;
     border-radius: 4px;
@@ -24,4 +25,19 @@
     background-color: #EFEFEF;
     color: black;
     font-weight: 400;
+}
+
+
+.outlinePrimary {
+    background: #FFFFFF;
+    border: 1px solid #C93E33;
+
+
+    font-weight: 500;
+    color: #C93E33;
+
+    svg {
+        width: 40px;
+        height: 40px;
+    }
 }

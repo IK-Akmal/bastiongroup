@@ -1,0 +1,58 @@
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+}
+
+
+
+.phoneNumber,
+.mail {
+    span {
+        margin-left: 11px;
+    }
+}
+
+.mail {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.008em;
+
+    color: #333333;
+
+}
+
+.phoneNumber {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 1px;
+}
+
+.local {
+
+    display: flex;
+    align-items: center;
+
+    .select {
+        display: inline;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        width: 65px;
+
+        font-family: Fira Sans;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0.009em;
+        text-align: left;
+        color: var(--primary-color);
+        text-overflow: ellipsis;
+
+        margin-left: 12px;
+
+    }
+}

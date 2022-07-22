@@ -1,4 +1,19 @@
-.img {
-    max-width: 82px;
-    max-height: 70px;
+.logo {
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    .img {
+        max-width: 82px;
+        max-height: 70px;
+    }
+
+    .text {
+        width: 112px;
+
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 12px;
+        letter-spacing: 0.009em;
+    }
 }

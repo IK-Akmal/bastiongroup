@@ -3,7 +3,7 @@ import styles from './Button.module.scss';
 import ButtonTypeProps from './Button.props';
 
 function Button({
-  className, type = 'primary', htmlType = 'button', icon, children, ...props
+  className, type, htmlType = 'button', icon, children, ...props
 }: ButtonTypeProps) {
   return (
 
@@ -14,6 +14,7 @@ function Button({
         {
           [styles.primary]: type === 'primary',
           [styles.ghost]: type === 'ghost',
+          [styles.outlinePrimary]: type === 'outline-primary',
         },
       )}
             // eslint-disable-next-line react/button-has-type

@@ -1,32 +1,27 @@
-import React from 'react';
 import styles from './Contact.module.scss';
 
 import { ReactComponent as PhoneIcon } from './icons/phone-icon.svg';
 import { ReactComponent as LocalIcon } from './icons/local-icon.svg';
 import { ReactComponent as MailIcon } from './icons/mail-icon.svg';
-import { ReactComponent as DownIcon } from './icons/down-icon.svg';
 
 function Contact() {
   return (
     <div className={styles.contact}>
-      <a href="tel:+74993807890">
+      <a className={styles.phoneNumber} href="tel:+74993807890">
         <PhoneIcon />
-        {' '}
-        +7 (499) 380-78-90
+        <span>+7 (499) 380-78-90</span>
       </a>
-      <span>
+      <span className={styles.local}>
         <LocalIcon />
-        {' '}
-        Москва
-        {' '}
-        <DownIcon />
-        {' '}
+        <select className={styles.select} name="cities" id="cities">
+          <option defaultValue="Москва" value="Москва">Москва</option>
+          <option value="Санкт-Петербург">Санкт-Петербург</option>
+          <option value="Екатеринбург">Екатеринбург</option>
+        </select>
       </span>
-
-      <a href="mailto:info@bastion.pro">
+      <a className={styles.mail} href="mailto:info@bastion.pro">
         <MailIcon />
-        {' '}
-        info@bastion.pro
+        <span>info@bastion.pro</span>
       </a>
 
     </div>

@@ -1,0 +1,78 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+
+    
+
+    >span {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: right;
+        letter-spacing: 0.009em;
+
+        color: #C93E33;
+    }
+}
+
+.output {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.009em;
+
+    p {
+        font-weight: 400;
+        color: #000000;
+    }
+
+    span {
+        padding: 4px 10px;
+        font-weight: 300;
+
+    }
+
+    .active {
+        background: #FFFFFF;
+        border-radius: 50%;
+
+        font-weight: 400;
+
+        color: #C93E33;
+    }
+
+}
+
+
+.pagination {
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    border-radius: 2px;
+
+    margin-left: 147px;
+    margin-right: 20px;
+
+    >div {
+        padding: 12px;
+        width: 36px;
+        text-align: center;
+        color: #B3B3B3;
+        cursor: pointer;
+    }
+
+    >div:not(:last-child) {
+        border-right: 1px solid #E6E6E6;
+    }
+
+    .currentPage {
+        color: black;
+    }
+
+}

@@ -4,11 +4,40 @@
     align-items: center;
     gap: 8.25px;
 
+    position: relative;
+
     span {
         font-weight: 300;
         font-size: 12px;
         line-height: 14px;
         letter-spacing: 0.009em;
+    }
 
+    .count {
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: absolute;
+        top: -10%;
+        right: 30%;
+        
+        width: 14px;
+        height: 14px;
+
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 10px;
+
+        letter-spacing: 0.009em;
+
+        color: #EFEFEF;
+
+
+        background: #C93E33;
+        border: 2px solid #FFFFFF;
+
+        border-radius: 50%;
     }
 }

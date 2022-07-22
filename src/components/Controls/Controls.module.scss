@@ -1,0 +1,20 @@
+.controls {
+    padding: 20px 0;
+    background-color: white;
+
+    .container {
+        display: flex;
+        align-items: center;
+    }
+
+    .search {
+        margin-left: 20px;
+    }
+
+    .wrapper {
+        display: flex;
+        gap: 36px;
+
+        margin-left: 42px;
+    }
+}

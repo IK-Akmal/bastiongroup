@@ -6,7 +6,7 @@ import TitleTypeProps from './Title.props';
 function Title({ variant = 'h1', className, children }: PropsWithChildren<TitleTypeProps>) {
   const Tag = `${variant}` as keyof JSX.IntrinsicElements;
   return (
-    <Tag className={classNames(styles.title, className)}>{children}</Tag>
+    <Tag className={classNames(className, styles.title)}>{children}</Tag>
   );
 }
 

@@ -47,6 +47,8 @@ function Filters() {
 
   const handleReset = () => {
     reset();
+    dispatch(setFilterProductType(''));
+    dispatch(setFilterPrice([0, maxPrice]));
   };
 
   return (
@@ -66,7 +68,6 @@ function Filters() {
               values={value}
               onChange={onChange}
               onFinalChange={onChangePrice}
-              step={10}
             />
           )}
         />

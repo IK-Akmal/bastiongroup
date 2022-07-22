@@ -5,10 +5,10 @@ function NavigationList() {
   return (
     <ul className={styles.navList}>
       <li className={styles.navLink}>
-        <Link to="/">Типы продуктов</Link>
+        <Link to="/product-type">Типы продуктов</Link>
       </li>
       <li className={styles.navLink}>
-        <Link to="/">Продукты</Link>
+        <Link to="/products">Продукты</Link>
       </li>
     </ul>
   );

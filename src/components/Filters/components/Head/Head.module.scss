@@ -1,0 +1,20 @@
+.head {
+    display: flex;
+    align-items: center;
+    padding: 18px 22px;
+    gap: 11.5px;
+
+
+    border: 1px solid #E6E6E6;
+    h2 {
+        margin: 0;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.009em;
+    }
+
+    svg{
+        opacity: 0.5;
+    }
+}

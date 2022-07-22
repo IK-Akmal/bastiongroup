@@ -1,0 +1,23 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    padding: 15px 20px;
+}
+
+.btnReset {
+    background-color: white;
+    border: 1px solid #E6E6E6;
+    padding: 15px 0;
+    width: 100%;
+
+    justify-content: center;
+
+
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.009em;
+
+    color: #B3B3B3;
+}

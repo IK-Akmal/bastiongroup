@@ -87,7 +87,7 @@ function FormProduct() {
     >
       <Input {...register('id', { required: true })} label="идентификатор" errorMessage={errors.id?.message} icon={<BarcodeIcon />} />
       <Input {...register('name', { required: true })} label="название " errorMessage={errors.name?.message} icon={<ProductIcon />} />
-      <Input {...register('image', { required: true })} type="file" errorMessage={errors.image?.message} />
+      <Input {...register('image', { required: true })} type="file" accept="image/png, image/gif, image/jpeg" errorMessage={errors.image?.message} />
       <Controller
         name="productType"
         control={control}
